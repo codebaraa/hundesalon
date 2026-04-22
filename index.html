@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feines Fell Hundesalon BERLIN</title>
+    
+     <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    <script type="module" src="/src/main.js"></script>
+
+</head>
+<body class="bg-[#FFF7FA] text-gray-800 antialiased flex flex-col min-h-screen text-[14px] md:text-[16px] lg:text-[18px] xl:text-[20px]">
+
+    <div class="container mx-auto p-4 sm:p-6 md:p-8 max-w-6xl">
+        
+        <header class="flex flex-col md:flex-row items-center justify-between p-6 bg-white rounded-2xl shadow-lg mb-12">
+            <div class="flex items-center gap-4">
+                <img src="./dog.png" 
+                     alt="Feines Fell Hundesalon Logo" 
+                     class="w-24 h-24 rounded-full border-4 border-pink-200">
+                <div>
+                    <h1 class="font-dancing text-5xl text-pink-600">
+                        Feines Fell
+                    </h1>
+                    <p class="text-gray-600 font-semibold text-center md:text-left">Hundesalon</p>
+                </div>
+            </div>
+            <div class="mt-6 md:mt-0 flex flex-col items-center md:items-end gap-2">
+                 <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-xl text-pink-500"></i>
+                    <a href="tel:+4915112345678" class="!text-gray-600 font-semibold font-medium" title="Ruf uns an!">0151 12345678</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-xl text-pink-500"></i>
+                    <a href="#location" class="!text-gray-600 font-semibold font-medium" title="Auf der Karte anzeigen!">Berlin, Musterstraße 42</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="space-y-12">
+
+            <section id="about" class="bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+                <div class="flex flex-col md:flex-row items-center gap-10">
+                    <div class="flex-1 text-center md:text-left">
+                        <h2 class="text-3xl lg:text-4xl font-bold text-pink-800 mb-4">Hallo, ich bin Lisa!</h2>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Schon seit meiner Kindheit sind Hunde mein Ein und Alles. Der Feines Fell Salon ist ein wahr gewordener Traum, ein kleiner Rückzugsort, an dem sich jede Fellnase wie zu Hause fühlen kann, während sie hübsch gemacht wird.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                           Für mich ist eine ruhige, freundliche Atmosphäre das Wichtigste. Mein Ziel ist es, dass dein Hund die Pflege nicht als lästige Pflicht, sondern als ein angenehmes Erlebnis empfindet. Ich erwarte euch mit viel Geduld und Liebe!
+                        </p>
+                        <div class="flex justify-center items-center gap-6">
+                            <a href="#" target="_blank" class="flex items-center justify-center">
+                               <i class="fa-brands fa-instagram text-[45px] text-transparent md:text-gray-400 animate-glitter-pink md:animate-none transition-all duration-300 md:hover:text-[#F6339A] md:hover:scale-110" ></i>
+                            </a>
+                            <a href="#" target="_blank" class="flex items-center justify-center" title="Facebook">
+                                <i class="logo fa-brands fa-facebook text-[42px] text-transparent md:text-gray-400 animate-glitter-pink md:animate-none transition-all duration-300 md:hover:text-[#F6339A] md:hover:scale-110"></i>
+                            </a>
+                            <a href="#" target="_blank" class="flex items-center justify-center" title="TikTok">
+                             <i class="logo fa-brands fa-tiktok text-[41px] text-transparent md:text-gray-400 animate-glitter-pink md:animate-none transition-all duration-300 md:hover:text-[#F6339A] md:hover:scale-110"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 order-first md:order-last">
+                        <img src="./KR-66.jpg" 
+                             alt="Lisa" 
+                             class="w-48 h-48 md:w-60 md:h-60 rounded-full object-cover shadow-xl border-4 border-white ring-4 ring-pink-200">
+                    </div>
+                </div>
+            </section>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <section id="service" class="lg:col-span-1 bg-white p-8 rounded-2xl shadow-lg flex flex-col items-center text-center">
+                    <h2 class="text-3xl font-bold text-pink-800 mb-6">Verwöhnprogramm</h2>
+                    <div class="bg-pink-500 text-white p-6 rounded-full mb-4 inline-block shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <circle cx="6" cy="6" r="3"></circle>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <line x1="8.5" y1="7.5" x2="18" y2="16"></line>
+                            <line x1="8.5" y1="16.5" x2="18" y2="8"></line>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-pink-700 mb-2">Liebevolle Fellpflege</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Bei mir dreht sich alles um das Wohlbefinden und die Schönheit deines Hundes. Den Schnitt passe ich immer dem Fell, der Rasse und natürlich deinen Vorstellungen an, damit das Endergebnis richtig schick und praktisch ist.
+                    </p>
+                </section>
+                
+                <section id="gallery" class="lg:col-span-2 bg-white p-8 rounded-2xl shadow-lg">
+                    <h2 class="text-3xl font-bold text-pink-800 mb-6 text-center">Meine glücklichen Gäste</h2>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <img src="./1.jpg" alt="Hundesalon Bild" class="transition-transform duration-300 md:hover:scale-110 rounded-lg shadow-md aspect-square object-cover shadow-xl">
+                        <img src="./2.jpg" alt="Hundesalon Bild" class="transition-transform duration-300 md:hover:scale-110 rounded-lg shadow-md aspect-square object-cover shadow-xl">
+                        <img src="./3.jpg"  alt="Hundesalon Bild" class="transition-transform duration-300 md:hover:scale-110 rounded-lg shadow-md aspect-square object-cover shadow-xl">
+                        <img src="./4.jpg"  alt="Hundesalon Bild" class="transition-transform duration-300 md:hover:scale-110 rounded-lg shadow-md aspect-square object-cover shadow-xl">
+                        <img src="./5.jpg"  alt="Hundesalon Bild" class="transition-transform duration-300 md:hover:scale-110 rounded-lg shadow-md aspect-square object-cover shadow-xl">
+                        <img src="./6.jpg"  alt="Hundesalon Bild" class="transition-transform duration-300 md:hover:scale-110 rounded-lg shadow-md aspect-square object-cover shadow-xl">
+                    </div>
+                </section>
+            </div>
+            
+            <section class="text-center p-6 bg-white rounded-2xl shadow-lg">
+                <button id="open-rules-btn" class="font-semibold text-pink-900 underline animate-pulse-custom md:animate-none hover:cursor-pointer transition-all duration-400 md:hover:scale-110 md:hover:text-[#F6339A]">
+                    Wichtige Infos - Bitte lies dir unsere Hausordnung durch!
+                </button>
+            </section>
+            
+            <section id="contact" class="text-center bg-gradient-to-r from-pink-500 to-pink-600 text-white p-12 rounded-2xl shadow-lg">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">Möchtest du einen Termin?</h2>
+                <p class="mb-8 max-w-xl mx-auto opacity-90">
+                    Wenn du Fragen hast oder einen Termin vereinbaren möchtest, ruf mich einfach an. Ich freue mich auf deinen Anruf!
+                </p>
+                <a href="tel:+4915112345678" 
+                   class="animate-glitter-white text-pink-600 font-bold px-10 py-4 rounded-full shadow-md transition-all duration-400 md:animate-none md:bg-white md:hover:bg-[#A3004C] md:hover:text-white md:hover:scale-110 md:hover:bg-none">
+                    Ruf mich an!
+                </a>
+            </section>
+
+            <section id="location" class="bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+    <h2 class="text-3xl lg:text-4xl font-bold text-pink-800 mb-6 text-center">Komm uns besuchen!</h2>
+    <div class="rounded-lg overflow-hidden border-4 border-pink-100">
+        
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.601579482869!2d13.388710315807664!3d52.52054237981448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c6c5929ce5%3A0x8035ea837549886a!2sMusterstra%C3%9Fe%2042%2C%2010115%20Berlin!5e0!3m2!1sde!2sde!4v1680000000000!5m2!1sde!2sde" 
+            width="100%" 
+            height="350" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-full">
+        </iframe>
+
+    </div>
+</section>
+
+        </main>
+        
+        <footer class="text-center py-8 mt-8 text-sm text-gray-500">
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-12 mb-8 text-center">
+                    <a href="impressum.html" class="text-gray-600 font-medium transition-colors duration-300 decoration-pink-200 underline-offset-4 md:hover:underline md:hover:text-pink-600">
+                        Impressum / Anbieterkennzeichnung
+                    </a>
+                    <a href="datenschutz.html" class="text-gray-600 font-medium transition-colors duration-300 decoration-pink-200 underline-offset-4 md:hover:underline md:hover:text-pink-600">
+                        Datenschutzerklärung
+                    </a>
+                    <a href="agb.html" class="text-gray-600 font-medium transition-colors duration-300 decoration-pink-200 underline-offset-4 md:hover:underline md:hover:text-pink-600">
+                        AGB - Allgemeine Geschäftsbedingungen
+                    </a>
+                </div>
+
+                <div class="border-t border-gray-100 pt-8 text-center">
+                    <p id="footer-year">© Feines Fell Hundesalon | Alle Rechte vorbehalten.</p>
+                    <p class="text-[10px] text-gray-400 mt-4 uppercase tracking-widest">
+                        Glückliche Pfoten & schönes Fell 
+                    </p>
+                </div>
+            </div>
+        </footer>
+        
+        </div>
+        
+        <div id="rules-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center p-4">
+            <div class="bg-white rounded-2xl shadow-2xl w-11/12 max-w-4xl flex flex-col max-h-[90vh]">
+                <div class="p-6 border-b border-gray-200 flex justify-between items-center flex-shrink-0">
+                    <h3 class="text-2xl font-bold text-pink-800">Hausordnung</h3>
+                    <button id="close-rules-btn" class="text-gray-400 hover:text-gray-800 text-3xl hover:cursor-pointer">×</button>
+                </div>
+                <div class="p-8 overflow-y-auto">
+                    <ul class="space-y-4 text-gray-700 list-disc list-inside">
+                        <li>Terminanfragen und Auskünfte sind wochentags, Montag bis Freitag von 9 bis 17 Uhr unter 0151 12345678 telefonisch möglich.</li>
+                        <li>Wenn ich während der Arbeit nicht sofort ans Telefon gehen kann, liegt das daran, dass ich gerade beide Hände voll zu tun habe. Ich melde mich so schnell wie möglich zurück.</li>
+                        <li>Ich bitte alle Frauchen und Herrchen, immer pünktlich zum vereinbarten Termin zu erscheinen. Durch meinen engen Zeitplan sind Verspätungen leider kaum machbar.</li>
+                        <li>Bitte seid rechtzeitig da. Bei 15-20 Minuten Verspätung kann ich den Hund sehr wahrscheinlich nicht mehr annehmen, da ich sonst bis zum nächsten Kunden nicht fertig werde.</li>
+                        <li>Sollte der Termin doch nicht passen, gebt mir bitte frühzeitig Bescheid, damit wir einen neuen finden. Eine kostenfreie Stornierung ist bis spätestens 24 Stunden vor dem Termin möglich.</li>
+                        <li>Bei Absagen innerhalb von 24 Stunden kann ich die Lücke so kurzfristig nicht mehr füllen. Daher muss ich beim nächsten Mal 50% des Preises für den ausgefallenen Termin berechnen (Das Gleiche gilt für unentschuldigtes Nichterscheinen).</li>
+                        <li>Ist das Fell stark vernachlässigt, extrem verfilzt oder finde ich Parasiten auf dem Hund, berechne ich einen Aufschlag! Herausspringende Flöhe können den gesamten Salon infizieren und sind eine Gefahr für andere Hunde.</li>
+                        <li>Bitte informiert mich im Voraus über ansteckende Krankheiten oder Allergien. Ohne diese Info kann ich bei auftretenden Problemen keine Haftung übernehmen.</li>
+                        <li>Die Besitzer dürfen während der Pflege nur auf meine ausdrückliche Bitte oder in begründeten Ausnahmefällen im Salon bleiben.</li>
+                    </ul>
+                    <p class="text-center font-bold text-lg mt-6 text-pink-700">Danke für dein Verständnis!</p>
+                </div>
+            </div>
+        </div>
+        
+        <button id="open-cookie-settings" class="fixed bottom-6 left-6 z-[90] bg-white w-12 h-12 rounded-full shadow-2xl flex items-center justify-center text-pink-600 hover:text-pink-700 hover:scale-110 transition-all duration-300 border-2 border-pink-100 group" title="Cookie-Einstellungen">
+            <i class="fa-solid fa-cookie-bite text-2xl"></i>
+            <span class="absolute left-14 bg-gray-800 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                Cookie-Einstellungen
+            </span>
+        </button>
+        
+        <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] p-4 transform translate-y-full transition-transform duration-500">
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-[0_-10px_40px_rgba(0,0,0,0.1)] p-6 border-t-4 border-pink-500">
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="flex-1 text-center md:text-left">
+                        <h4 class="text-lg font-bold text-gray-800 mb-2">Verwendung von Cookies 🍪</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Unsere Website verwendet Cookies, um dein Nutzererlebnis zu verbessern. Einige Cookies sind für den Betrieb unerlässlich, andere helfen uns bei Statistiken. Weitere Details findest du in unserer 
+                            <a href="/adatkezeles.html" class="text-pink-600 underline">Datenschutzerklärung</a>.
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+                        <button id="cookie-reject" class="px-6 py-2 text-sm font-semibold text-gray-500 hover:text-gray-800 transition-colors border border-gray-200 rounded-full">
+                            Nur essenzielle
+                        </button>
+                        <button id="cookie-accept" class="px-8 py-2 text-sm font-semibold text-white bg-pink-600 hover:bg-[#A3004C] transition-all rounded-full shadow-md">
+                            Alle akzeptieren
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

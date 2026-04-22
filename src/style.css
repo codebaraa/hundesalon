@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --font-dancing: "Dancing Script", cursive;
+  --font-quicksand:"Quicksand", sans-serif;
+}
+.font-dancing {
+  font-family: var(--font-dancing);
+}
+.font-quicksand {
+  font-family: var(--font-quicksand);
+}
+
+/* Base styles for mobile (320px - 480px) */
+@layer base {
+@keyframes pulse-highlight {
+  0% {
+    transform: scale(1);
+  }
+  18.75% { /* 1.5s (half of 3s) / 8s total = 18.75% */
+    transform: scale(1.1);
+    font-weight: 1800;
+  }
+  37.5% { /* 3s / 8s total = 37.5% */
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animate-pulse-custom {
+  /* Total duration is 8s (3s active + 5s pause) */
+  animation: pulse-highlight 7s infinite ease-in-out;
+}
+
+@keyframes glitter-diagonal {
+  0% {
+    background-position: 100% 100%;
+  }
+  20%, 100% {
+    background-position: 0% 0%;
+  }
+}
+.animate-glitter-white{
+/* Diagonal gradient: Transparent -> Light -> Transparent */
+  background-image: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #ffffff 40%,
+    #e4e4e4f9 50%,
+    #ffffff 52%,
+    #e4e4e4f9 54%, 
+    #ffffff 64%,
+    #ffffff 100%
+  );
+  background-size: 300% 300%;
+  animation: glitter-diagonal 7s infinite ease-in-out;
+}
+.animate-glitter-pink{
+/* 1. Create background gradient */
+  background-image: linear-gradient(
+    135deg, 
+    #9ca3af 0%,       /* basic-gray */
+    #9ca3af 35%,      /* basic-gray */
+    #f6339a 45%,      /* beginning of glitter */
+    #ffffff 50%,      /* white middle part */
+    #f6339a 55%,      /* end of glitter */
+    #9ca3af 65%,      /* back to gray*/
+    #9ca3af 100%      /* back to gray*/
+  );
+/* 2. Crop the background to fit the text shape */
+  -webkit-background-clip: text;
+  background-clip: text;
+/* 4. Animation & Size */
+  background-repeat: no-repeat;
+  background-size: 300% 300%;
+  animation: glitter-diagonal 7s infinite ease-in-out;
+/* So that it looks nice and sharp */
+  display: inline-block;  
+}
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+}  
+@media (min-width: 769px) { body { font-size: 16px; } }
+@media (min-width: 1440px) { body { font-size: 20px; } }

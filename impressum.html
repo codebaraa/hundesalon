@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - Feines Fell</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="/src/main.js"></script>
+</head>
+<body class="bg-[#FFF7FA] text-gray-800 antialiased flex flex-col min-h-screen text-[14px] md:text-[16px]">
+
+    <div class="container mx-auto p-4 sm:p-6 md:p-8 max-w-4xl">
+        <a href="index.html" class="inline-flex items-center gap-2 text-pink-600 font-semibold mb-8 hover:gap-4 transition-all">
+            <i class="fa-solid fa-arrow-left"></i> Zurück zur Startseite
+        </a>
+
+        <main class="bg-white p-8 md:p-12 rounded-2xl shadow-lg">
+            <h1 class="font-quicksand text-3xl text-pink-600 mt-10 mb-30 text-center tracking-tight uppercase md:text-5xl">Impressum</h1>
+            
+            <div class="space-y-8 text-gray-700">
+                <section>
+                    <h2 class="text-xl font-bold text-pink-800 border-b-2 border-pink-100 pb-2 mb-4 text-center md:text-left">Angaben gemäß § 5 TMG</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <p class="font-bold">Name:</p>
+                            <p>Lisa Musterfrau</p>
+                        </div>
+                        <div>
+                            <p class="font-bold">Adresse:</p>
+                            <p>Musterstraße 42<br>10115 Berlin</p>
+                        </div>
+                        <div>
+                            <p class="font-bold">Umsatzsteuer-ID:</p>
+                            <p>DE123456789</p>
+                        </div>
+                        <div>
+                            <p class="font-bold">Handelsregister / Registernummer:</p>
+                            <p>HRB 12345 B</p>
+                        </div>
+                        <div>
+                            <p class="font-bold">Aufsichtsbehörde:</p>
+                            <p>Gewerbeamt Berlin-Mitte</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-pink-800 border-b-2 border-pink-100 pb-2 mt-15 mb-4 text-center md:text-left">Kontakt</h2>
+                    <p><span class="font-bold">Telefon:</span> 0151 12345678</p>
+                    <p><span class="font-bold">E-Mail:</span> hallo@feines-fell-berlin.de</p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-pink-800 border-b-2 border-pink-100 pb-2 mt-15 mb-4 text-center md:text-left">Angaben zum Hostinganbieter</h2>
+                    <p><span class="font-bold">Name:</span> [NAME DEINES HOSTERS, z.B. Netlify / Vercel / Hostinger]</p>
+                    <p><span class="font-bold">Adresse:</span> [ADRESSE DES HOSTERS]</p>
+                    <p><span class="font-bold">E-Mail:</span> [E-MAIL DES HOSTERS]</p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-pink-800 border-b-2 border-pink-100 pb-2 mt-15 mb-4 text-center md:text-left">Zuständige Kammer</h2>
+                    <p>IHK Berlin / Handwerkskammer Berlin</p>
+                </section>
+            </div>
+        </main>
+
+    </div>
+    <footer class="text-center py-8 text-sm text-gray-400 mt-auto">
+           <p id="footer-year">&copy; Feines Fell Hundesalon | Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <button id="open-cookie-settings" class="fixed bottom-6 left-6 z-[90] bg-white w-12 h-12 rounded-full shadow-2xl flex items-center justify-center text-pink-600 hover:text-pink-700 hover:scale-110 transition-all duration-300 border-2 border-pink-100 group" title="Cookie-Einstellungen">
+            <i class="fa-solid fa-cookie-bite text-2xl"></i>
+            <span class="absolute left-14 bg-gray-800 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                Cookie-Einstellungen
+            </span>
+    </button>
+    
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] p-4 transform translate-y-full transition-transform duration-500">
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-[0_-10px_40px_rgba(0,0,0,0.1)] p-6 border-t-4 border-pink-500">
+            <div class="flex flex-col md:flex-row items-center gap-6">
+                <div class="flex-1 text-center md:text-left">
+                    <h4 class="text-lg font-bold text-gray-800 mb-2">Verwendung von Cookies 🍪</h4>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Unsere Website verwendet Cookies, um dein Nutzererlebnis zu verbessern. Einige Cookies sind für den Betrieb unerlässlich, andere helfen uns bei Statistiken. Weitere Details findest du in unserer 
+                        <a href="/adatkezeles.html" class="text-pink-600 underline">Datenschutzerklärung</a>.
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+                    <button id="cookie-reject" class="px-6 py-2 text-sm font-semibold text-gray-500 hover:text-gray-800 transition-colors border border-gray-200 rounded-full">
+                        Nur essenzielle
+                    </button>
+                    <button id="cookie-accept" class="px-8 py-2 text-sm font-semibold text-white bg-pink-600 hover:bg-[#A3004C] transition-all rounded-full shadow-md">
+                        Alle akzeptieren
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
